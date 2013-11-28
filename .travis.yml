@@ -1,5 +1,6 @@
 script:
  - uname -a
+ - cat /proc/version
  - cat /proc/cpuinfo
  - free
  - df -h
