@@ -2,6 +2,8 @@ script:
  - uname -a
  - cat /proc/cpuinfo
  - free
+ - df -h
+ - mount
  - cat /etc/debian_version
  - cat /etc/lsb-release
  - sudo sysctl -a
