@@ -7,3 +7,8 @@ script:
  - sudo sysctl -a
  - sudo grep -r . /etc/apt
  - dpkg -l
+ - ip a
+ - ip rou
+ - ip -6 rou
+ - sudo iptables -L -n
+ - sudo iptables -L -n -t nat
