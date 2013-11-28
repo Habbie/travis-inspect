@@ -14,4 +14,3 @@ script:
  - ip rou
  - ip -6 rou
  - sudo iptables -L -n
- - sudo iptables -L -n -t nat
