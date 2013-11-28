@@ -1,2 +1,3 @@
 script:
  - find /etc/apt
+ - dpkg -l
