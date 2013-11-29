@@ -16,4 +16,4 @@ script:
  - sudo iptables -L -n
  - date
  - cat /etc/timezone
- - ps axuf
+ - ps axufw
