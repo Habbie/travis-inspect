@@ -18,3 +18,4 @@ script:
  - cat /etc/timezone
  - ps axufw
  - sudo netstat -plan
+ - /usr/sbin/sestatus
