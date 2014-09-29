@@ -1,3 +1,7 @@
+language: cpp
+compiler:
+  - gcc
+  - clang
 script:
  - uname -a
  - cat /proc/version
@@ -20,3 +24,4 @@ script:
  - sudo netstat -plan
  - rvm debug
  - timeout 5 dd if=/dev/random of=/dev/null bs=1k count=1 iflag=fullblock ; echo $?
+ - which gcc g++ clang clang++
