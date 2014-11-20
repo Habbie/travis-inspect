@@ -27,3 +27,4 @@ script:
  - which gcc g++ clang clang++
  - env
  - sudo env
+ - which timeout
