@@ -28,3 +28,5 @@ script:
  - env
  - sudo env
  - which timeout
+ - curl -s -4 my.ip.fi || true
+ - curl -s -6 my.ip.fi || true
