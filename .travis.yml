@@ -3,6 +3,7 @@ compiler:
   - gcc
   - clang
 script:
+ - sudo apt-get -qq --no-install-recommends install traceroute 
  - dig pypi.org A
  - dig pypi.org AAAA
  - dig files.pythonhosted.org A
@@ -19,6 +20,7 @@ script:
  - echo -n | openssl s_client -4 -connect files.pythonhosted.org:443
  - echo -n | openssl s_client -6 -connect pypi.org:443
  - echo -n | openssl s_client -6 -connect files.pythonhosted.org:443
+ - sudo pip install requests
  - uname -a
  - cat /proc/version
  - cat /proc/cpuinfo
