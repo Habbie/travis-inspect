@@ -1,3 +1,5 @@
+sudo: required
+dist: trusty
 language: cpp
 compiler:
   - gcc
@@ -30,3 +32,6 @@ script:
  - which timeout
  - curl -s -4 my.ip.fi || true
  - curl -s -6 my.ip.fi || true
+ - cat /etc/resolv.conf
+ - apt-get install dnsmasq
+ - cat /etc/resolv.conf
